@@ -7,7 +7,7 @@ const OrderedList = () => {
 
   //change input field on change of input field
   const inpChange = (e) => {
-    setInput(e.target.value.trim())
+    setInput(e.target.value.toLowerCase().trim())
   }
   
   //add input to list and sort on enter keystroke, clear input after
