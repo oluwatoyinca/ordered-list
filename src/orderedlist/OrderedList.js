@@ -49,7 +49,7 @@ const OrderedList = () => {
       <button className="sort-direction" onClick={changeDirection}>{direction ? 'down' : 'up'}</button>
       <button className="clear-list" onClick={clearAll}>️🆑</button>
       <ul className="items-list">
-        {list.map(m => {return <li key={m}>{m}</li>})}
+        {list.map((m,ind) => {return <li key={ind}>{m}</li>})}
       </ul>
     </>
   );
